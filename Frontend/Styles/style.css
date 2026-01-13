@@ -34,10 +34,6 @@
 
 /* ========== La navigation header ========== */
 
-body{
-    background-color: var(--couleur-erreur);
-}
-
 header{
     background-color: var(--couleur-principale);
     color: var(--couleur-blanc);
@@ -78,7 +74,7 @@ header{
 .hero {
     background-color: var(--couleur-blanc);
     background-image: linear-gradient(to right, var(--couleur-blanc) 45%, transparent 100%), 
-                      url(./../Assets/imgs/hero-img1.jpg);
+                      url(../../Assets/Images/hero-img1.jpg);
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;

@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;   }
 .image{
-    background: url('./../images/ismb10.jpeg') no-repeat;
+    background: url('../../Assets/Images/hero-img2.jpg') no-repeat;
 height: 100vh;
 background-size: cover;
 background-position: center;
