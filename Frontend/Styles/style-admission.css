@@ -1,0 +1,376 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   }
+.image{
+    background: url('./../images/ismb10.jpeg') no-repeat;
+height: 100vh;
+background-size: cover;
+background-position: center;
+}
+.lesfirst{
+      position: absolute;
+    top: 52%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 0 20PX;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50PX;
+}
+.Admission{
+    color: rgb(42, 236, 58);
+    font-size: 80PX;
+    font-weight: 1000;
+}
+.Votre{
+     color: rgb(42, 236, 58);
+    font-size: 27PX;
+    font-weight: 200;
+}
+.bouton1{
+    color: rgb(18, 19, 20);
+    height: 50PX;width: 300PX;
+    border-radius: 33PX;
+}
+
+
+
+
+
+
+.section2
+{
+      position: absolute;
+    width: 100%;
+    padding: 80PX 20PX;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8PX;
+    background-color: #ffffff;
+}
+.processus{
+    color: rgb(22, 22, 44);
+    font-size: 150;
+    font-size: 50px;
+}
+
+
+
+
+
+
+.grand3{
+    background-color: rgb(211, 211, 211);
+    padding: 25%;
+    display: flex;gap: 30PX;
+   margin-bottom: 20PX;
+   margin-left: -15%;
+   
+}
+.pppp{
+    display: flex;
+}
+.rectangle{
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 30PX;
+    width: 350PX;height: 70PX;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.ffff{
+    background-color: #6b7280;border-radius: 50%;padding: 1%;
+}
+.fffi{
+     background-color: #6b7280;border-radius: 50%;padding: 2.5%;
+
+}
+.rectanglee{
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 30PX;
+    width: 350PX;height: 70PX;
+    text-align: center;
+    justify-content: center;
+    align-items: center;padding-right: 70PX;}
+.Grandrect{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.rectgrand2{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.hmm{
+    display: flex;
+    gap: 50PX;
+}
+.GENIE{
+    background-color: rgb(235, 243, 243);
+    width: 350PX;height: 100PX;
+     text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30PX;padding-top: 40PX;padding-right: 170PX;
+}
+.HIHI{
+    padding-right: 40PX;
+}
+.HIHI1{
+    padding-right: 60PX;
+}
+.HIHI2{
+    padding-right: 80PX;
+}
+.LESPACE{
+    display: flex;
+    flex-direction: column;
+    gap: 75PX;
+}
+
+
+
+
+
+
+
+.procedure {
+    max-width: 1100px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+.procedure h2 {
+    font-size: 32px;
+    color: #1f3a5f;
+    margin-bottom: 10px;
+}
+.subtitleC {
+    color: #6b7280;
+    margin-bottom: 60px;
+}
+.steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.steps::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #e5e7eb;
+    z-index: 0;
+}
+.step {
+    width: 23%;
+    position: relative;
+    z-index: 1;
+}
+.circle {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 2px solid #1f3a5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #1f3a5f;
+    background: #fff;
+}
+.step.active .circle {
+    background: #1f3a5f;
+    color: #fff;
+}
+.step h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+.step p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+@media (max-width: 900px) {
+    .steps {
+        flex-direction: column;
+    }
+
+    .steps::before {
+        display: none;
+    }
+
+    .step {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.legrand5{
+    display: flex;
+    justify-content: center;
+    gap: 150PX;
+    background-color: rgb(192, 192, 192);
+    padding: 9%;
+}
+.legrand5second{
+    background-color: #ebf1f1;
+    width: 85%;
+    height: 300PX;padding-left: 50PX;
+    display: flex;
+    gap:35PX ;border-radius: 30PX;padding-left: 30PX;padding-top: 60PX;padding-right:30PX ;
+}
+.piece{
+    display: flex;flex-direction: column;gap: 42PX;
+}
+.AHS{
+    display: flex;
+    gap: 30PX;padding-left: 5PX;
+}
+.KARL{
+    background-color: rgb(202, 202, 202);
+    border-radius: 10PX;text-align: center;justify-content: center;align-items: center;height: 40PX;width: 230PX;display: flex;gap: 10PX;
+}
+.KARL1{
+     background-color: rgb(202, 202, 202);
+    border-radius: 10PX;text-align: center;justify-content: center;align-items: center;height: 40PX;width: 230PX;display: flex;gap: 10PX;padding-right: 40PX;
+}
+.KARL2{
+     background-color: rgb(202, 202, 202);
+    border-radius: 10PX;text-align: center;justify-content: center;align-items: center;height: 40PX;width: 230PX;display: flex;gap: 10PX;padding-right: 35PX;
+}
+.siomm{
+    display: flex;gap: 10PX;
+}
+.olala{
+    display: flex;flex-direction: column;gap: 30PX;
+}
+
+
+
+
+
+
+
+
+.legrand6{
+    background-color: rgb(7, 7, 54);
+    padding: 5%;display: flex;flex-direction: column;gap: 20PX;
+}
+.lefirste{
+    color: aliceblue;font-size: 20PX;
+}
+.BOTONFACON{
+    background-color: rgb(255, 255, 255);width: 350PX;height: 45PX;border-radius: 30PX;
+    justify-content: center;text-align: center;align-items: center;display: flex;gap: 20PX;
+}
+.milieu{
+    display: flex;gap: 80PX;text-align: center;align-items: center;
+}
+.bon{
+    color: aliceblue;font-size: 20PX;
+}
+.KOL{
+    color: #ffffff;display: flex;gap: 20PX;
+}
+.GRIODE{
+    display: flex;flex-direction: column;gap: 17PX;
+}
+
+
+
+
+
+
+.legrand7{
+    padding: 10%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;flex-direction: column;gap: 60PX;
+}
+.phonemailloca{
+    display: flex;gap: 50PX;justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.locatt{
+    background-color: #365e96;border-radius: 50%;padding: 3%;
+}
+.LESCARE{
+    background-color: rgb(196, 192, 185);
+    border-radius: 22PX;height: 200PX;width: 360PX;margin-top: 30PX;padding-top: 70PX;padding: 5%;
+   
+}
+.Besoin{
+    color: rgb(5, 5, 82);font-size: 30PX;
+}
+.P2{
+    font-size: 20PX;
+}
+.JZJPO{
+    display: flex;flex-direction: column;gap: 12PX;
+}
+
+
+
+
+
+
+.legrand8{
+    background-color: rgb(220, 221, 221);
+    padding: 10%;
+    display: flex;flex-direction: column;gap: 30PX;justify-content: center;align-items: center;
+}
+.commebtn1{
+    color: rgb(236, 240, 245);
+    background-color: rgb(1, 1, 54);
+    height: 50PX;width: 290PX;
+    border-radius: 33PX; }
+.commebtn2{
+     color: rgb(14, 18, 24);
+    background-color: rgb(222, 222, 230);
+    height: 50PX;width: 290PX;
+    border-radius: 33PX;
+}
+.les2btnn{
+    display: flex;
+    gap: 15PX;
+}
+.h2p{
+    color: rgb(7, 7, 48);font-size: 40PX;
+}
+.PARA{
+    color: rgb(10, 9, 9);font-size: 25PX;
+}
+
+
+
+
+
+
+
+
+
+

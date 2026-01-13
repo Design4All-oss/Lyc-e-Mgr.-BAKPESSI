@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.manioc1{
+    background: url(./../image/ismb11.jpeg) no-repeat;
+    padding: 40VH;background-size: cover;background-position: center;
+    border-radius: 20PX;margin-left: 30PX;margin-right: 30PX;
+}
+.anana{
+     position: absolute;
+    top: 52%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 0 20PX;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20PX;padding-bottom: 130PX;
+}
+.GIV{
+    color: rgb(18, 19, 20);
+    height: 50PX;width: 250PX;
+    border-radius: 22PX;
+    background-color: aliceblue;justify-content: center;margin-left: 530PX;padding-top: 14PX;
+}
+.sima{
+color: aliceblue;font-size: 70PX;
+}
+.liom{
+color: aliceblue;font-size: 22PX;
+}
+
+
+
+
+
+
+
+.manioc2{
+    display: flex;gap: 30PX;margin-left: 110PX;
+}
+.FOITRE{
+    display: flex;flex-direction: column;gap: 20PX;margin-top: 35PX;margin-left: -10%;margin-right: 70PX;padding: 6%;
+}
+.lesim{
+    background-color: #aeb5c5;border-radius: 7PX;margin-right: 150PX;
+}
+.lamala{
+    border-radius: 22PX;margin-top: 40PX;margin-bottom: 40PX;margin-right:30PX;
+
+}  
+.DOIET{
+    display: flex;background-color: #e4e3e3;border-radius: 30PX;gap: 10PX;width: 250PX;align-items: center;padding-left: 15PX;
+}
+
+
+
+
+
+
+
+.timeline-section {
+    max-width: 1100px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+.timeline-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.subtitle {
+    color: #6c7a89;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    font-size: 15px;
+}
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #e0e0e0;
+    transform: translateX(-50%);
+}
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+}
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+.timeline-item .content h3 {
+    color: #1f3c88;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.timeline-item .content p {
+    font-size: 14px;
+    color: #555;
+}
+.dot {
+    position: absolute;
+    top: 30px;
+    left: 100%;
+    width: 10px;
+    height: 10px;
+    background: #1f3c88;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+.timeline-item.right .dot {
+    left: 0;
+    transform: translateX(-50%);
+}
+.year {
+    position: absolute;
+    top: 20px;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.07);
+    font-weight: bold;
+}
+.timeline-item.left .year {
+    right: -120px;
+}
+.timeline-item.right .year {
+    left: -120px;
+}
+
+
+
+
+
+
+
+
+.manioc4{
+   padding: 8%;background-color: rgb(252, 252, 252);
+    display: flex;gap: 40PX;justify-content: center;align-items: center;text-align: center;
+}
+.balo1{
+    background-color:white;width: 500PX;height: 200PX;border-radius: 28PX;padding-top: 20PX;text-align: start;
+}
+.ugo{
+    margin-right: 80PX;
+}
+.ugo1{
+    margin-right: 105PX;
+}
+.TRAVAILLIB{
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+.manioc5{
+    padding: 100PX;
+    background-color:rgb(250, 249, 249);justify-content: center;align-items: center;text-align: center;display: flex;flex-direction: column;
+}
+.PETIMAN{
+    background-color: white;display: flex;flex-direction: column;gap: 15PX;border-radius: 35PX;width: 750PX;height: 200PX;padding-top: 30PX;border-left-color:rgb(3, 3, 80) ;
+}
+.koirp{
+    display: flex;gap: 10PX;text-align: center;align-items: center;justify-content: center;width: 4OOPX;
+}
+.cerc{
+    background-color: rgb(206, 203, 199); border-radius: 50%;
+}
+.KMM{
+    margin-right: 38PX;font-size: 28PX;
+}
+.PARI{
+    font-size: 20PX;text-align: start;
+}
+.LIHUG{
+    font-size: 22;color: rgb(5, 5, 77);
+}
+
+
+
+
+
+
+
+.manioc6{
+    padding: 4%;
+    background-color: rgb(9, 9, 53);
+    display: flex;text-align: center;align-items: center;justify-content: center;gap: 190PX;
+    color: rgb(32, 35, 37);
+}
+.hait{
+    font-size: 40PX;color: aliceblue;
+}
+.sale{
+    color: rgb(162, 167, 138);
+}
+.ILO{
+    display: flex;gap: 8PX;width: 200;padding-left: 200PX;align-items: center;
+}
+
+
+
+
+
+
+
+
+.manioc7{
+    padding: 10%;background-color: rgb(233, 234, 235);
+    display: flex;justify-content: center;align-items: center;text-align: center;gap: 200PX;border-radius: 30PX;
+}
+.NOQH{
+    display: flex;flex-direction: column;gap: 20PX;margin-left: -50PX;
+}
+.im{
+    margin-right: -80PX;
+}
+ .hutugfry{
+    font-size: 23PX;color: rgb(19, 19, 82);
+ }
+ .pad{
+    padding: 4% ;
+    background-color: aliceblue;
+ }
+ .faib{
+    display: flex;gap: 10PX;margin-left: 35%;
+ }
+ .LEPIO{
+    text-align: start;
+ }
+
+
+
+
+
+
+
+ .manioc8{
+    padding: 8%;
+ }
+ .premier{
+    background-color:white;justify-content: center;align-items: center;text-align: center;padding: 3%;
+ }
+ .premier2{
+    background-color: white;padding: 5%;justify-content: center;align-items: center;text-align: center;
+ }
+.kio{
+    background-color:white;width: 1000PX;height: 200PX;display: flex;justify-content: center;align-items: center;text-align: center;gap: 50PX;font-size: 17PX;
+} 
+.kio2{
+    background-color: white;width: 1000PX;height: 200PX;display: flex;justify-content: center;align-items: center;text-align: center;gap: 50PX;font-size: 17PX;
+}
+.GIOA{
+    display: flex;gap: 20PX;
+}
+.Pourquoi{
+    font-size: 50PX;color: rgb(5, 5, 53);
+}
+.QDSD{
+    font-size: 30PX;
+}
+.ttreim{
+    background-color: rgb(193, 206, 248);width: 90PX;height: 49PX;border-radius: 7PX;padding-top: 10PX;
+} 
+
+
+
+
+
+
+
+
+.manioc9{
+    background-color: rgb(220, 221, 221);
+    padding: 10%;
+    display: flex;flex-direction: column;gap: 30PX;justify-content: center;align-items: center;
+}
+.commebtn9{
+    color: rgb(236, 240, 245);
+    background-color: rgb(1, 1, 54);
+    height: 50PX;width: 290PX;
+    border-radius: 33PX; }
+.commebtn0{
+     color: rgb(14, 18, 24);
+    background-color: rgb(222, 222, 230);
+    height: 50PX;width: 290PX;
+    border-radius: 33PX;
+}
+.sqmkf{
+    display: flex;
+    gap: 15PX;
+}
+.h1P{
+    color: rgb(7, 7, 48);font-size: 40PX;
+}
+.PARAG{
+    color: rgb(10, 9, 9);font-size: 25PX;  
+ }
+
+
+
+
+
+
+ .manioc10{
+    padding: 4%;
+    display: flex;justify-content: center;align-items: center;text-align: center;gap: 200PX;
+ }
+.cetmb{
+    display: flex;
+}
+.logoer{
+    display: flex;gap: 40PX;
+}
+.OOOOOOO{
+    display: flex;
+}
+.ZZZZ{
+     display: flex;flex-direction: column;gap: 30PX;
+}
+.llllll{
+    padding-right: 50PX;
+}
+.RRRR{
+    padding-left: 10PX;
+}
+.RRRO{
+    padding-left: 25PX;
+}
+.SSSS{
+    display: flex;flex-direction: column;gap: 20PX;
+}
+.UUUU{
+ display: flex;flex-direction: column;gap: 20PX;   
+}
+.cccc{
+ display: flex;flex-direction: column;gap: 20PX;
+}
+.iiii{
+ display: flex;flex-direction: column;gap: 15PX;
+}
+
+.snivhjv{
+    display: flex;
+}
+.kdldk{
+    background-color: #aeb5c5;border-radius: 50%;
+}
+
+
+
