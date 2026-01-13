@@ -226,7 +226,7 @@ h1 {
 }
 
 .card-dark {
-    background-image: url(./../Assets/imgs/hero-img2.jpg);
+    background-image: url(../../Assets/Images/hero-img1.jpg);
     background-position: center;
     background-size: cover;
     color: var(--text-white);
