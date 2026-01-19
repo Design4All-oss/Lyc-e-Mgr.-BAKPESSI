@@ -1,8 +1,4 @@
-*{
-    font-family: 'sora', sans-serif;
-}
-
-/* Importation de la charte graphique */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 :root {
     --couleur-principale: #243B5A;
     --couleur-secondaire: #F2A21A;
@@ -10,107 +6,314 @@
     --couleur-blanc: #FAFAFA;
     --bleu-doux: #E6ECF3;
     --or-clair: #FFD98A;
+    --or-hover: #D88F12;
     --texte-secondaire: #5F6B7A;
     --bordure-claire: #DDE3EA;
     --ombre-douce: rgba(0, 0, 0, 0.08);
     --couleur-succes: #2E9B5F;
+    --couleur-warning: #F4B400;
+    --couleur-erreur: #D64545;
+    --couleur-info: #3A7BD5;
+    --text-muted: #8b949e;
+    --border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* --- BANNIÈRE HERO --- */
-.banniere-detail {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sora', sans-serif;
+}
+
+
+.conteneur {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-filiere {
+    background: linear-gradient(rgba(36, 59, 90, 0.7), rgba(36, 59, 90, 0.7)), 
+                url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1600') center/cover;
     height: 450px;
-    background: linear-gradient(rgba(36, 59, 90, 0.85), rgba(36, 59, 90, 0.85)), 
-                url("../../Assets/Images/hero-img2.jpg") center/cover;
-    border-radius: 20px;
-    margin: 20px;
     display: flex;
     align-items: center;
-    padding: 60px;
-    color: var(--couleur-blanc);
+    color: white;
+    border-radius: 10px;
+    margin: 2% 20px;
 }
 
-.etiquette-badge {
-    background: var(--couleur-secondaire);
-    color: var(--couleur-noir);
-    padding: 5px 15px;
-    border-radius: 4px;
-    font-weight: 800;
-    font-size: 0.75rem;
-}
-
-.banniere-detail h1 {
+.titre-filiere {
     font-size: 3.5rem;
     margin: 20px 0;
+    text-align: center;
 }
 
-.bouton-clair {
-    background: white;
-    color: var(--couleur-principale);
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s;
+.description-filiere {
+    max-width: 600px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    text-align: center;
 }
 
-/* --- CONTENU --- */
-.conteneur-principal {
-    padding: 50px 8%;
-}
 
-.grille-presentation {
+
+/* Présentation */
+.section-presentation {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 40px;
+    margin-bottom: 80px;
 }
 
-.boite-video {
-    height: 250px;
-    background: var(--bleu-doux);
-    border: 2px dashed var(--bordure-claire);
+.titre-section {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.presentation-texte p {
+    margin-bottom: 20px;
+    color: var(--texte-secondaire);
+}
+
+.video-placeholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: url('../../Assets/Images/hero-img1.jpg') center/cover;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    color: var(--couleur-principale);
-    margin-top: 20px;
+    margin-top: 30px;
+    position: relative;
+    box-shadow: 0 10px 30px var(--ombre-douce);
 }
 
+.bouton-lecture {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--couleur-principale);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Cartes Info */
 .carte-info {
     background: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: 12px;
-    margin-bottom: 20px;
-    border: 1px solid var(--bordure-claire);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px var(--ombre-douce);
 }
 
-.carte-info.foncee {
+.icone-cercle {
+    width: 45px;
+    height: 45px;
+    background: var(--bleu-doux);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--couleur-principale);
+}
+
+.carte-info h3 { font-size: 0.9rem; color: var(--couleur-principale); }
+.carte-info p { font-size: 1rem; font-weight: 600; }
+
+.carte-conditions {
     background: var(--couleur-principale);
     color: white;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
 }
 
-.carte-info.foncee h4 { color: var(--or-clair); }
+.carte-conditions h3 { margin-bottom: 20px; }
+.carte-conditions ul { list-style: none; }
+.carte-conditions li { margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+.carte-conditions .icone-fond {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    font-size: 6rem;
+    opacity: 0.1;
+}
 
-/* --- BANDEAU INCRIPTION --- */
-.bandeau-inscription {
-    background-color: var(--couleur-succes);
+/* Objectifs & Compétences */
+.section-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.titre-icone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.liste-objectifs { list-style: none; }
+.liste-objectifs li {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 2px 10px var(--ombre-douce);
+}
+
+.liste-objectifs li i { color: var(--couleur-succes); margin-top: 5px; }
+
+.bloc-competence {
+    
+    border-left: 4px solid var(--couleur-secondaire);
+    padding: 5px 20px;
+    margin-bottom: 25px;
+}
+
+.bloc-competence h3 { margin-bottom: 5px; }
+.bloc-competence p { color: var(--texte-secondaire); font-size: 0.95rem; }
+
+/* Débouchés & Avenir */
+.section-avenir {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.sur-titre {
+    color: var(--texte-secondaire);
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.titre-grand { font-size: 1.8rem; margin: 10px 0 30px 0; }
+
+.grille-debouches {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.item-debouche {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.item-etude {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.item-etude i {
+    font-size: 1.5rem;
+    color: var(--couleur-principale);
+}
+
+.item-etude p { font-size: 0.9rem; color: var(--texte-secondaire); }
+
+/* CTA Section */
+.section-appel-action {
+    background: var(--couleur-principale);
     color: white;
     padding: 50px;
-    border-radius: 15px;
-    margin: 40px 8%;
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 60px;
 }
 
-.bouton-action-blanc {
+.cta-contenu { max-width: 60%; }
+.cta-contenu h2 { font-size: 2.2rem; margin-bottom: 15px; }
+.cta-info { margin-top: 20px; font-size: 0.85rem; opacity: 0.8; }
+
+.cta-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-principal {
     background: white;
-    color: var(--couleur-succes);
-    padding: 15px 35px;
-    border-radius: 8px;
+    color: var(--couleur-principale);
+    padding: 15px 20px;
+    border-radius: 10px; 
     text-decoration: none;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-principal:hover {
+    background-color: var(--bleu-doux);
+    transform: translateY(-2px);
+}
+
+.btn-secondaire {
+    border: 1px solid var(--bordure-claire);
+    width: 55px;  
+    height: 55px; 
+    border-radius: 50%;
+    display: flex;        
+    align-items: center;  
+    justify-content: center; 
+    transition: background-color 0.2s, transform 0.2s;
+    text-decoration: none;
+}
+
+/* Ajustement de la taille de l'icône téléphone */
+.btn-secondaire img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Force l'icône en blanc si nécessaire */
+}
+
+.btn-secondaire:hover {
+    background-color: var(--or-hover);
+    transform: scale(1.05);
+}
+.cta-image-vide{
+    width: 50%;
+    
+}
+
+
+.cta-delai { font-size: 0.75rem; opacity: 0.7; }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .section-presentation, .section-details, .section-avenir, .section-appel-action {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .cta-contenu { max-width: 100%; text-align: center; }
+    .section-appel-action { flex-direction: column; text-align: center; }
+    .titre-filiere { font-size: 2.5rem; }
 }
