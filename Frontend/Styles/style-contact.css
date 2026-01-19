@@ -1,0 +1,159 @@
+/* --- PAGE CONTACT --- */
+
+.page-contact {
+    background-color: #f2f2f2;
+    padding: 20px 20px;
+}
+
+/* En-tête */
+.hero-contact-minimal {
+    padding: 100px 0 60px;
+    text-align: center;
+    background-color: white; /* Le haut de l'image est blanc */
+}
+
+.hero-contact-minimal h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+/* Grille et Sections */
+.section-contact-contenu {
+    padding: 80px 0;
+}
+
+.grille-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: flex-start;
+}
+
+/* Colonne Infos */
+.titre-contact {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description-contact {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.item-coord {
+    display: flex;
+    align-items: flex-start; /* Aligné en haut pour les textes longs */
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.icone-orange {
+    width: 42px;
+    height: 42px;
+    background-color: #ff7a00; /* Orange vif de l'image */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.texte-coord strong {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+}
+
+/* Formulaire (La Carte) */
+.contact-formulaire-carte {
+    background: white;
+    padding: 60px;
+    border-radius: 30px; /* Coins très arrondis comme sur l'image */
+    box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+}
+
+.contact-formulaire-carte h3 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.groupe-saisie {
+    margin-bottom: 25px;
+}
+
+.groupe-saisie input, 
+.groupe-saisie textarea {
+    width: 100%;
+    padding: 15px 0; /* Uniquement du padding vertical pour le style "souligné" */
+    border: none;
+    border-bottom: 1px solid #e0e0e0; /* Bordure fine en bas seulement */
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.groupe-saisie input::placeholder, 
+.groupe-saisie textarea::placeholder {
+    color: #ccc;
+}
+
+.groupe-saisie input:focus, 
+.groupe-saisie textarea:focus {
+    outline: none;
+    border-bottom-color: #ff7a00;
+}
+
+.mention-legale {
+    font-size: 0.85rem;
+    color: #ccc;
+    line-height: 1.4;
+    margin: 30px 0;
+}
+
+/* ALIGNEMENT BOUTON À DROITE */
+.alignement-bouton {
+    display: flex;
+    justify-content: flex-end; /* Pousse le bouton à droite */
+}
+
+.bouton-orange-contact {
+    background-color: #ff7a00;
+    color: white;
+    border: none;
+    padding: 12px 45px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.bouton-orange-contact:hover {
+    background-color: #e66e00;
+    transform: translateY(-2px);
+}
+
+/* Carte */
+.section-carte-localisation {
+    width: 100%;
+    margin-bottom: -80px; /* Pour toucher le footer si nécessaire */
+}
+
+.cadre-carte iframe {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .grille-contact {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .hero-contact-minimal h1 { font-size: 2.2rem; }
+}
