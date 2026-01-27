@@ -330,76 +330,17 @@
     </main>
 
 
-    <footer class="pied-page">
-        <div class="conteneur-pied">
-
-            <div class="colonne-logo">
-                <div class="logo-fictif">
-                    
-                    <span class="nom-ecole">CETMB</span>
-                </div>
-                <p class="slogan-pied">
-                    Nous bâtissons l'excellence technique pour les leaders de demain.
-                </p>
-                <p class="annee-pied">Lycée Technique, 2024.</p>
-            </div>
-
-            <div class="colonne-liens">
-                <h4>Académique</h4>
-                <ul>
-                    <li><a href="#">Filières Industrielles</a></li>
-                    <li><a href="#">Filières Tertiaires</a></li>
-                    <li><a href="#">Calendrier Scolaire</a></li>
-                </ul>
-            </div>
-
-            <div class="colonne-liens">
-                <h4>Institution</h4>
-                <ul>
-                    <li><a href="#">À propos de nous</a></li>
-                    <li><a href="#">Administration</a></li>
-                    <li><a href="#">Actualités</a></li>
-                </ul>
-            </div>
-
-            <div class="colonne-liens">
-                <h4>Ressources</h4>
-                <ul>
-                    <li><a href="#">Espace Élèves</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">Inscriptions</a></li>
-                </ul>
-            </div>
-
-            <div class="colonne-actions">
-                <h4>Nous suivre</h4>
-                <div class="groupe-boutons">
-                    <a href="#" class="bouton-pilule">
-                        <img src="./Assets/icones/facebook.svg" alt="">
-                        Facebook
-                    </a>
-                    <a href="#" class="bouton-pilule">
-                        <img src="./Assets/icones/linkedin.svg" alt="">
-                        LinkedIn
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="barre-legale">
-            <div class="contenu-barre">
-                <p>© 2024 CETMB Inc. Tous droits réservés.</p>
-                <div class="liens-legaux">
-                    <a href="#">Conditions d'utilisation</a>
-                    <a href="#">Politique de confidentialité</a>
-                    <a href="#">Cookies</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+<div id="footer-placeholder"></div>
 
 
+    <script>
+        fetch('./Frontend/Components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du footer:', error));
+    </script>
 </body>
 
 </html>
