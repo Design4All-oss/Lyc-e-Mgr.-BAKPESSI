@@ -160,6 +160,54 @@ h1 {
     filter: brightness(0) invert(1); 
 }
 
+/* Styles pour les icônes SVG inline */
+.icon-inline {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.card .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .icon img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.card-teal .card-link img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+    margin-left: 5px;
+}
+
+.voir-tous img {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.play-icon img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+.badge-pill img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
 .btn-prim:hover {
     background-color: var(--bleu-doux);
 }
@@ -1022,6 +1070,13 @@ h1 {
 
 .bouton-pilule img {
     width: 20px;
+}
+
+/* Styles pour les icônes dans les badges de série */
+.badge-pill .icone-badge img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
 }
 
 /* --- BARRE LÉGALE VERTE --- */

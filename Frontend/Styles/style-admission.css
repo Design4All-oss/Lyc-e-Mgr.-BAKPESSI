@@ -1,11 +1,11 @@
 :root {
-    --bleu-fonce: #1F3A5F;
+    --bleu-fonce: var(--couleur-principale);
     --bleu-nuit: #162A44;
-    --orange-cetmb: #F2A21A;
-    --gris-fond: #F8FAFC;
-    --gris-texte: #6B7280;
-    --blanc: #FFFFFF;
-    --vert-succes: #22C55E;
+    --orange-cetmb: var(--couleur-secondaire);
+    --gris-fond: var(--couleur-blanc);
+    --gris-texte: var(--texte-secondaire);
+    --blanc: var(--couleur-blanc);
+    --vert-succes: var(--couleur-succes);
 }
 
 * {
@@ -53,11 +53,11 @@ section { padding: 20px 10%; }
 /* --- GRILLE CONDITIONS --- */
 .grille-conditions { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
 
-.carte-blanche { background: var(--blanc); padding: 40px; border-radius: 20px; border: 1px solid #E5E7EB; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+.carte-blanche { background: var(--blanc); padding: 40px; border-radius: 20px; border: 1px solid var(--bordure-claire); }
 
 .entete-carte { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
 
-.icone-ronde { background: #E6EEFA; padding: 10px; border-radius: 10px; font-size: 1.5rem; }
+.icone-ronde { background: var(--bleu-doux); padding: 10px; border-radius: 10px; font-size: 1.5rem; }
 
 .liste-check { margin-top: 25px; display: flex; flex-direction: column; gap: 15px; }
 
@@ -66,16 +66,16 @@ section { padding: 20px 10%; }
 .pastille-verte { background: var(--vert-succes); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; }
 
 .sous-grille-filieres { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
-.mini-carte { background: var(--gris-fond); padding: 15px; border-radius: 12px; font-size: 0.85rem; border: 1px solid #EDEDED; }
+.mini-carte { background: var(--gris-fond); padding: 15px; border-radius: 12px; font-size: 0.85rem; border: 1px solid var(--bordure-claire); }
 
 /* --- STEPPER --- */
 .etapes-conteneur { display: flex; justify-content: space-between; position: relative; margin-top: 60px; }
 
-.ligne-connexion { position: absolute; top: 30px; left: 5%; right: 5%; height: 2px; background: #E5E7EB; z-index: 1; }
+.ligne-connexion { position: absolute; top: 30px; left: 5%; right: 5%; height: 2px; background: var(--bordure-claire); z-index: 1; }
 
 .etape { text-align: center; width: 20%; z-index: 2; }
 
-.cercle-numero { width: 60px; height: 60px; background: var(--blanc); border: 2px solid #E5E7EB; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 700; color: var(--bleu-fonce); transition: 0.3s; }
+.cercle-numero { width: 60px; height: 60px; background: var(--blanc); border: 2px solid var(--bordure-claire); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 700; color: var(--bleu-fonce); transition: 0.3s; }
 
 .cercle-numero.actif { background: var(--bleu-fonce); color: var(--blanc); border-color: var(--bleu-fonce); }
 
@@ -90,7 +90,7 @@ section { padding: 20px 10%; }
 
 .grille-documents { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
 
-.doc-item { background: var(--blanc); padding: 12px 20px; border-radius: 10px; font-size: 0.9rem; box-shadow: 0 2px 5px rgba(0,0,0,0.02); display: flex; align-items: center; gap: 10px; }
+.doc-item { background: var(--blanc); padding: 12px 20px; border-radius: 10px; font-size: 0.9rem; border: 1px solid var(--bordure-claire); display: flex; align-items: center; gap: 10px; }
 
 /* --- BANDEAU BLEU --- */
 .bandeau-bleu { background: var(--bleu-nuit); color: var(--blanc); margin: 40px 10%; border-radius: 30px; padding: 60px; }
@@ -115,10 +115,10 @@ section { padding: 20px 10%; }
 .carte-assistance h4 { margin-bottom: 10px; color: var(--bleu-fonce); }
 
 /* --- FINAL --- */
-.section-final { text-align: center; background: #fcfcfc; }
+.section-final { text-align: center; background: var(--couleur-blanc); }
 
 .groupe-boutons { display: flex; justify-content: center; gap: 20px; margin-top: 40px; }
 
 .bouton-bleu-fonce { background: var(--bleu-fonce); color: white; padding: 15px 40px; border-radius: 50px; border: none; font-weight: 600; cursor: pointer; }
 
-.bouton-contour { background: transparent; border: 2px solid #E5E7EB; padding: 15px 40px; border-radius: 50px; font-weight: 600; cursor: pointer; }
+.bouton-contour { background: transparent; border: 2px solid var(--bordure-claire); padding: 15px 40px; border-radius: 50px; font-weight: 600; cursor: pointer; }

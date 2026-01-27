@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admissions - CETMB</title>
+    <link rel="stylesheet" href="../../Frontend/Styles/common-styles.css">
+    <link rel="stylesheet" href="../../Frontend/Styles/style.css">
     <link rel="stylesheet" href="../../Frontend/Styles/style-admission.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="header-container"></div>
 
     <section class="hero-admission">
         <div class="conteneur-hero">
@@ -26,20 +28,20 @@
         <div class="grille-conditions">
             <div class="carte-blanche">
                 <div class="entete-carte">
-                    <span class="icone-ronde"><img src="" alt=""></span>
+                    <span class="icone-ronde"><img src="../../Assets/Icons/graduation-cap.svg" alt="Conditions"></span>
                     <h3>Conditions d'admission</h3>
                 </div>
                 <p class="texte-gris">L'admission au CETMB se fait sur étude de dossier pour garantir un niveau d'excellence homogène au sein de nos promotions.</p>
                 <div class="liste-check">
-                    <div class="item-check"><span class="pastille-verte">✓</span> Être titulaire du BEPC ou diplôme équivalent</div>
-                    <div class="item-check"><span class="pastille-verte">✓</span> Avoir un dossier scolaire satisfaisant</div>
-                    <div class="item-check"><span class="pastille-verte">✓</span> Passer l'entretien de motivation (selon la filière)</div>
+                    <div class="item-check"><span class="pastille-verte"><img src="../../Assets/Icons/check.svg" alt="✓"></span> Être titulaire du BEPC ou diplôme équivalent</div>
+                    <div class="item-check"><span class="pastille-verte"><img src="../../Assets/Icons/check.svg" alt="✓"></span> Avoir un dossier scolaire satisfaisant</div>
+                    <div class="item-check"><span class="pastille-verte"><img src="../../Assets/Icons/check.svg" alt="✓"></span> Passer l'entretien de motivation (selon la filière)</div>
                 </div>
             </div>
 
             <div class="carte-blanche">
                 <div class="entete-carte">
-                    <span class="icone-ronde"><img src="" alt=""></span>
+                    <span class="icone-ronde"><img src="../../Assets/Icons/book.svg" alt="Niveaux"></span>
                     <h3>Niveaux & Filières</h3>
                 </div>
                 <p class="texte-gris">Nous offrons des formations techniques de pointe adaptées aux besoins du marché togolais et international.</p>
@@ -87,15 +89,15 @@
             <div class="texte-pieces">
                 <h3>Pièces à fournir</h3>
                 <p>Assurez-vous d'avoir tous les documents originaux lors de votre visite. Tout dossier incomplet ne pourra être traité.</p>
-                <a href="#" class="lien-telechargement"><img src="" alt=""> Télécharger la liste PDF</a>
+                <a href="#" class="lien-telechargement"><img src="../../Assets/Icons/download.svg" alt="Télécharger"> Télécharger la liste PDF</a>
             </div>
             <div class="grille-documents">
-                <div class="doc-item"><img src="" alt=""> Acte de naissance (copie)</div>
-                <div class="doc-item"><img src="" alt=""> Relevés de notes (3 ans)</div>
-                <div class="doc-item"><img src="" alt=""> Certificat de nationalité</div>
-                <div class="doc-item"><img src="" alt=""> 4 photos d'identité</div>
-                <div class="doc-item"><img src="" alt=""> Certificat médical</div>
-                <div class="doc-item"><img src="" alt=""> Fiche de renseignement</div>
+                <div class="doc-item"><img src="../../Assets/Icons/file-text.svg" alt="Acte de naissance"> Acte de naissance (copie)</div>
+                <div class="doc-item"><img src="../../Assets/Icons/file-text.svg" alt="Relevés de notes"> Relevés de notes (3 ans)</div>
+                <div class="doc-item"><img src="../../Assets/Icons/file-text.svg" alt="Certificat de nationalité"> Certificat de nationalité</div>
+                <div class="doc-item"><img src="../../Assets/Icons/user.svg" alt="Photos d'identité"> 4 photos d'identité</div>
+                <div class="doc-item"><img src="../../Assets/Icons/heart-pulse.svg" alt="Certificat médical"> Certificat médical</div>
+                <div class="doc-item"><img src="../../Assets/Icons/file-text.svg" alt="Fiche de renseignement"> Fiche de renseignement</div>
             </div>
         </div>
     </section>
@@ -106,11 +108,11 @@
                 <h2>Pré-inscription en ligne</h2>
                 <p>Gagnez du temps et sécurisez votre place dès maintenant. C'est simple, rapide et sans engagement financier immédiat.</p>
                 <div class="points-cles">
-                    <span>✓ Traitement prioritaire</span>
-                    <span>✓ Accès au portail étudiant</span>
+                    <span><img src="../../Assets/Icons/check.svg" alt="✓"> Traitement prioritaire</span>
+                    <span><img src="../../Assets/Icons/check.svg" alt="✓"> Accès au portail étudiant</span>
                 </div>
             </div>
-            <button class="bouton-cta-blanc">Commencer ma pré-inscription →</button>
+            <button class="bouton-cta-blanc">Commencer ma pré-inscription <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></button>
         </div>
     </section>
 
@@ -144,6 +146,16 @@
             <button class="bouton-contour">Télécharger la brochure</button>
         </div>
     </section>
+    
+    <script>
+        // Charger le header commun
+        fetch('../Components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du header:', error));
+    </script>
 
 </body>
 </html>

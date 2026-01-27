@@ -1,159 +1,356 @@
-/* --- PAGE CONTACT --- */
+/* --- PAGE CONTACT MODERNE (STYLE APPLE/GOOGLE) --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 .page-contact {
-    background-color: #f2f2f2;
-    padding: 20px 20px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--couleur-blanc);
+    min-height: 100vh;
+    padding: 0;
+    color: var(--couleur-noir);
 }
 
-/* En-tête */
+/* Hero Section Minimaliste */
 .hero-contact-minimal {
-    padding: 100px 0 60px;
+    padding: 120px 5% 80px;
     text-align: center;
-    background-color: white; /* Le haut de l'image est blanc */
+    background-color: var(--couleur-blanc);
+    position: relative;
+    overflow: hidden;
 }
+
+
 
 .hero-contact-minimal h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    color: #1a1a1a;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--couleur-noir);
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
 }
 
-/* Grille et Sections */
+.hero-contact-minimal p {
+    font-size: 1.25rem;
+    color: var(--texte-secondaire);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Section Contenu Principal */
 .section-contact-contenu {
-    padding: 80px 0;
+    padding: 100px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .grille-contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    align-items: flex-start;
+    gap: 80px;
+    align-items: start;
 }
 
-/* Colonne Infos */
+/* Colonne Informations */
+.contact-infos {
+    background: var(--couleur-blanc);
+    padding: 50px;
+    border-radius: 24px;
+    border: 1px solid var(--bordure-claire);
+}
+
 .titre-contact {
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--couleur-noir);
     margin-bottom: 20px;
+    letter-spacing: -0.3px;
 }
 
 .description-contact {
-    font-size: 1rem;
-    color: #666;
+    font-size: 1.1rem;
+    color: var(--texte-secondaire);
     margin-bottom: 40px;
     line-height: 1.6;
 }
 
+/* Coordonnées avec icônes modernes */
+.liste-coordonnees {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .item-coord {
     display: flex;
-    align-items: flex-start; /* Aligné en haut pour les textes longs */
-    gap: 15px;
-    margin-bottom: 25px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.item-coord:hover {
+    background-color: var(--bleu-doux);
+    transform: translateX(5px);
 }
 
 .icone-orange {
-    width: 42px;
-    height: 42px;
-    background-color: #ff7a00; /* Orange vif de l'image */
-    color: white;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--couleur-principale);
+    color: var(--couleur-blanc);
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     flex-shrink: 0;
 }
 
 .texte-coord strong {
     font-size: 1.1rem;
-    color: #1a1a1a;
+    color: var(--couleur-noir);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
 }
 
-/* Formulaire (La Carte) */
+.texte-coord p {
+    font-size: 1rem;
+    color: var(--texte-secondaire);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Réseaux Sociaux */
+.reseaux-sociaux {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.reseaux-sociaux h4 {
+    font-size: 1.1rem;
+    color: var(--couleur-noir);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.liens-sociaux {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-social {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--bleu-doux);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--texte-secondaire);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--bordure-claire);
+}
+
+.btn-social:hover {
+    background: var(--couleur-principale);
+    color: var(--couleur-blanc);
+    transform: translateY(-2px);
+}
+
+/* Formulaire Moderne */
 .contact-formulaire-carte {
-    background: white;
-    padding: 60px;
-    border-radius: 30px; /* Coins très arrondis comme sur l'image */
-    box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+    background: var(--couleur-blanc);
+    padding: 50px;
+    border-radius: 24px;
+    border: 1px solid var(--bordure-claire);
 }
 
 .contact-formulaire-carte h3 {
-    font-size: 2rem;
-    margin-bottom: 40px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--couleur-noir);
+    margin-bottom: 30px;
+    letter-spacing: -0.2px;
 }
 
+/* Champs de formulaire */
 .groupe-saisie {
     margin-bottom: 25px;
 }
 
-.groupe-saisie input, 
+.groupe-saisie input,
 .groupe-saisie textarea {
     width: 100%;
-    padding: 15px 0; /* Uniquement du padding vertical pour le style "souligné" */
-    border: none;
-    border-bottom: 1px solid #e0e0e0; /* Bordure fine en bas seulement */
-    background-color: transparent;
+    padding: 16px 20px;
+    border: 1px solid var(--bordure-claire);
+    border-radius: 14px;
+    background-color: var(--couleur-blanc);
     font-family: inherit;
     font-size: 1rem;
+    color: var(--couleur-noir);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
-.groupe-saisie input::placeholder, 
+.groupe-saisie input::placeholder,
 .groupe-saisie textarea::placeholder {
-    color: #ccc;
+    color: var(--texte-secondaire);
 }
 
-.groupe-saisie input:focus, 
+.groupe-saisie input:focus,
 .groupe-saisie textarea:focus {
     outline: none;
-    border-bottom-color: #ff7a00;
+    border-color: var(--couleur-principale);
+    background-color: var(--couleur-blanc);
+    box-shadow: 0 0 0 3px rgba(36, 59, 90, 0.1);
 }
 
+.groupe-saisie textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Mention légale */
 .mention-legale {
-    font-size: 0.85rem;
-    color: #ccc;
-    line-height: 1.4;
-    margin: 30px 0;
+    font-size: 0.875rem;
+    color: var(--texte-secondaire);
+    line-height: 1.5;
+    margin: 25px 0 30px;
 }
 
-/* ALIGNEMENT BOUTON À DROITE */
-.alignement-bouton {
-    display: flex;
-    justify-content: flex-end; /* Pousse le bouton à droite */
-}
-
+/* Bouton d'action principal */
 .bouton-orange-contact {
-    background-color: #ff7a00;
-    color: white;
+    background-color: var(--couleur-principale);
+    color: var(--couleur-blanc);
     border: none;
-    padding: 12px 45px;
-    border-radius: 50px;
-    font-weight: 700;
+    padding: 16px 32px;
+    border-radius: 14px;
+    font-weight: 500;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+    width: 100%;
 }
 
 .bouton-orange-contact:hover {
-    background-color: #e66e00;
     transform: translateY(-2px);
 }
 
-/* Carte */
+.bouton-orange-contact:active {
+    transform: translateY(0);
+}
+
+/* Section Carte Localisation */
 .section-carte-localisation {
-    width: 100%;
-    margin-bottom: -80px; /* Pour toucher le footer si nécessaire */
+    padding: 0 5% 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cadre-carte {
+    background: var(--couleur-blanc);
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid var(--bordure-claire);
 }
 
 .cadre-carte iframe {
+    width: 100%;
+    height: 450px;
     display: block;
+    border: none;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
+/* Responsive Design */
+@media (max-width: 1024px) {
     .grille-contact {
-        grid-template-columns: 1fr;
         gap: 60px;
     }
-    .hero-contact-minimal h1 { font-size: 2.2rem; }
+    
+    .contact-infos,
+    .contact-formulaire-carte {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-contact-minimal {
+        padding: 80px 5% 60px;
+    }
+    
+    .hero-contact-minimal h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-contact-minimal p {
+        font-size: 1.1rem;
+    }
+    
+    .section-contact-contenu {
+        padding: 60px 5%;
+    }
+    
+    .grille-contact {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .contact-infos,
+    .contact-formulaire-carte {
+        padding: 30px;
+    }
+    
+    .titre-contact {
+        font-size: 1.75rem;
+    }
+    
+    .item-coord {
+        padding: 15px;
+    }
+    
+    .icone-orange {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+    
+    .section-carte-localisation {
+        padding: 0 5% 60px;
+    }
+    
+    .cadre-carte iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-contact-minimal h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-contact-minimal p {
+        font-size: 1rem;
+    }
+    
+    .contact-infos,
+    .contact-formulaire-carte {
+        padding: 25px;
+        border-radius: 20px;
+    }
+    
+    .titre-contact {
+        font-size: 1.5rem;
+    }
+    
+    .btn-social {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
 }

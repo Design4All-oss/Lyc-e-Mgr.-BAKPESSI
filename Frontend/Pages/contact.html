@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactez-nous - CETMB</title>
+    <link rel="stylesheet" href="../../Frontend/Styles/common-styles.css">
+    <link rel="stylesheet" href="../../Frontend/Styles/style.css">
     <link rel="stylesheet" href="../../Frontend/Styles/style-contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div id="header-container"></div>
 
     <main class="page-contact">
         <section class="hero-contact-minimal">
@@ -18,7 +21,7 @@
         </section>
 
         <section class="section-contact-contenu">
-            <div class="conteneur grille-contact">
+            <div class="grille-contact">
                 
                 <div class="contact-infos">
                     <h2 class="titre-contact">Restons en contact</h2>
@@ -51,12 +54,12 @@
                     </div>
 
                     <div class="reseaux-sociaux">
-                        <h4>Suivez-nous :</h4>
+                        <h4>Suivez-nous</h4>
                         <div class="liens-sociaux">
-                            <a href="#" class="btn-social"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="btn-social"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="btn-social"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="btn-social"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn-social" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="btn-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -65,18 +68,21 @@
                     <h3>Envoyez un message</h3>
                     <form>
                         <div class="groupe-saisie">
-                            <input type="text" placeholder="Nom" required>
+                            <input type="text" placeholder="Votre nom complet" required>
                         </div>
                         <div class="groupe-saisie">
-                            <input type="email" placeholder="Adresse e-mail" required>
+                            <input type="email" placeholder="Votre adresse e-mail" required>
                         </div>
                         <div class="groupe-saisie">
-                            <textarea placeholder="Votre message" rows="5" required></textarea>
+                            <input type="tel" placeholder="Numéro de téléphone (optionnel)">
+                        </div>
+                        <div class="groupe-saisie">
+                            <textarea placeholder="Votre message" rows="6" required></textarea>
                         </div>
                         <p class="mention-legale">
                             En soumettant ce formulaire, vous acceptez le traitement de vos données personnelles selon notre politique de confidentialité.
                         </p>
-                        <button type="submit" class="bouton-orange-contact">Envoyer</button>
+                        <button type="submit" class="bouton-orange-contact">Envoyer le message</button>
                     </form>
                 </div>
 
@@ -84,14 +90,22 @@
         </section>
 
         <section class="section-carte-localisation">
-            <div class="conteneur">
-                <div class="cadre-carte">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.734842526!2d1.1856!3d9.5489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMzInNTYuMCJOIDHCsDExJzA4LjIiRQ!5e0!3m2!1sfr!2stg!4v1625500000000" 
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+            <div class="cadre-carte">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.734842526!2d1.1856!3d9.5489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMzInNTYuMCJOIDHCsDExJzA4LjIiRQ!5e0!3m2!1sfr!2stg!4v1625500000000" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
+    
+    <script>
+        // Charger le header commun
+        fetch('../Components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du header:', error));
+    </script>
 
 </body>
 </html>

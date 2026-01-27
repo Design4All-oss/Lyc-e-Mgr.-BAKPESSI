@@ -1,9 +1,16 @@
 <head></head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos filières de formation</title>
+    <link rel="stylesheet" href="../../Frontend/Styles/common-styles.css">
+    <link rel="stylesheet" href="../../Frontend/Styles/style.css">
     <link rel="stylesheet" href="./../Styles/style-filiere.css">
 </head>
+<body>
+    <div id="header-container"></div>
 
 <main class="page-nos-filieres">
     <section class="entete-filieres">
@@ -30,7 +37,7 @@
                 <p class="description-formation">
                     Maîtrisez la conception et la fabrication de systèmes mécaniques complexes. De la DAO à l’usinage.
                 </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme →</a>
+                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
             </article>
 
             <article class="fiche-formation">
@@ -42,7 +49,7 @@
                 <p class="description-formation">
                     Plongez au cœur des circuits et des systèmes embarqués pour concevoir les technologies modernes.
                 </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme →</a>
+                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
             </article>
 
             <article class="fiche-formation">
@@ -54,7 +61,7 @@
                 <p class="description-formation">
                     Apprenez à gérer la production et la distribution de l'énergie électrique pour les industries.
                 </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme →</a>
+                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
             </article>
         </div>
     </section>
@@ -72,7 +79,7 @@
                 <p class="description-formation">
                     Formation axée sur la bureautique, l’organisation administrative et la communication professionnelle.
                 </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme →</a>
+                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
             </article>
 
             <article class="fiche-formation">
@@ -82,9 +89,9 @@
                 </div>
                 <h3 class="titre-formation">Comptabilité</h3>
                 <p class="description-formation">
-                    PApprentissage des bases de la comptabilité, de la gestion financière et de l’analyse comptable.
+                    Apprentissage des bases de la comptabilité, de la gestion financière et de l’analyse comptable.
                 </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme →</a>
+                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
             </article>
 
             <article class="fiche-formation">
@@ -96,7 +103,7 @@
                 <p class="description-formation">
                     Formation orientée vers la gestion des entreprises, l’organisation et le management.
                 </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme →</a>
+                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
             </article>
         </div>
     </section>
@@ -106,9 +113,21 @@
             <div class="textes-cta">
                 <h2 class="titre-cta">Choisissez la filière qui correspond à votre avenir</h2>
                 <p class="description-cta">Chaque filière du CETMB est pensée pour offrir des opportunités concrètes et durables aux élèves.</p>
-                <button class="bouton-cta-blanc">Commencer ici <span class="fleche">→</span></button>
+                <button class="bouton-cta-blanc">Commencer ici <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></button>
             </div>
             <div class="contenu-vide"></div>
         </div>
     </section>
 </main>
+    
+    <script>
+        // Charger le header commun
+        fetch('../Components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du header:', error));
+    </script>
+</body>
+</html>

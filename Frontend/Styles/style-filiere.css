@@ -70,11 +70,10 @@
 }
 
 .fiche-formation {
-    background: white;
+    background: var(--couleur-blanc);
     padding: 35px;
     border-radius: 12px;
     border: 1px solid var(--bordure-claire);
-    box-shadow: var(--ombre-douce);
     transition: 0.3s ease;
 }
 
@@ -189,7 +188,7 @@
 }
 
 .bouton-cta-blanc:hover {
-    background: var(--or-clair);
+    background-color: var(--or-hover);
     transform: scale(1.05);
 }
 
