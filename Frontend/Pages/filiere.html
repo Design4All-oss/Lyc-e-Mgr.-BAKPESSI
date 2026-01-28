@@ -1,6 +1,7 @@
 <head></head>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,134 +10,217 @@
     <link rel="stylesheet" href="../../Frontend/Styles/style.css">
     <link rel="stylesheet" href="./../Styles/style-filiere.css">
 </head>
+
 <body>
-    <div id="header-container"></div>
-
-<main class="page-nos-filieres">
-    <section class="entete-filieres">
-        <span class="etiquette">FORMATION TECHNIQUE</span>
-        <h1>Nos filières de formation</h1>
-        <p class="sous-titre">Excellence académique et technique à Kara.</p>
-        <p class="paragraphe-intro">
-            Le CETMB propose des parcours rigoureux conçus pour former l’élite technique de demain.
-            Nos programmes allient théorie avancée et pratique intensive pour garantir une insertion professionnelle immédiate.
-        </p>
-    </section>
-
-    <section class="groupe-filieres">
-        <h2 class="titre-categorie">Filières Industrielles</h2>
-        <p class="sous-titre-categorie">Les filières industrielles du CETMB forment des techniciens qualifiés capables d’intervenir dans les domaines de la mécanique, de l’électricité, de l’électronique et des systèmes techniques modernes.</p>
-
-        <div class="grille-fiches">
-            <article class="fiche-formation">
-                <div class="fiche-haut">
-                    <div class="icone-fiche bleu"><img src="../../Assets/Icons/Mec-cog.svg" alt=""></div>
-                    <span class="nom-serie">SÉRIE F1</span>
-                </div>
-                <h3 class="titre-formation">Construction Mécanique</h3>
-                <p class="description-formation">
-                    Maîtrisez la conception et la fabrication de systèmes mécaniques complexes. De la DAO à l’usinage.
-                </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
-            </article>
-
-            <article class="fiche-formation">
-                <div class="fiche-haut">
-                    <div class="icone-fiche bleu"><img src="../../Assets/Icons/elec-cpu.svg" alt=""></div>
-                    <span class="nom-serie">SÉRIE F2</span>
-                </div>
-                <h3 class="titre-formation">Électronique</h3>
-                <p class="description-formation">
-                    Plongez au cœur des circuits et des systèmes embarqués pour concevoir les technologies modernes.
-                </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
-            </article>
-
-            <article class="fiche-formation">
-                <div class="fiche-haut">
-                    <div class="icone-fiche bleu"><img src="../../Assets/Icons/electro-zap.svg" alt=""></div>
-                    <span class="nom-serie">SÉRIE F3</span>
-                </div>
-                <h3 class="titre-formation">Électrotechnique</h3>
-                <p class="description-formation">
-                    Apprenez à gérer la production et la distribution de l'énergie électrique pour les industries.
-                </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
-            </article>
+    <header>
+        <div class="logo">
+            <img src="../../Assets/Brand/LOGO3.webp" alt="CETMB Logo" width="80px">
         </div>
-    </section>
-    <section class="groupe-filieres">
-        <h2 class="titre-categorie">Filières tertiaires</h2>
-        <p class="sous-titre-categorie">Les filières tertiaires du CETMB forment des élèves capables d’évoluer dans les domaines de la gestion, de l’administration et de la comptabilité, avec une forte orientation professionnelle.</p>
-
-        <div class="grille-fiches">
-            <article class="fiche-formation">
-                <div class="fiche-haut">
-                    <div class="icone-fiche bleu"><img src="../../Assets/Icons/sec-headset.svg" alt=""></div>
-                    <span class="nom-serie">SÉRIE G1</span>
-                </div>
-                <h3 class="titre-formation">Secrétariat</h3>
-                <p class="description-formation">
-                    Formation axée sur la bureautique, l’organisation administrative et la communication professionnelle.
-                </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
-            </article>
-
-            <article class="fiche-formation">
-                <div class="fiche-haut">
-                    <div class="icone-fiche bleu"><img src="../../Assets/Icons/calculator.svg" alt=""></div>
-                    <span class="nom-serie">SÉRIE G2</span>
-                </div>
-                <h3 class="titre-formation">Comptabilité</h3>
-                <p class="description-formation">
-                    Apprentissage des bases de la comptabilité, de la gestion financière et de l’analyse comptable.
-                </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
-            </article>
-
-            <article class="fiche-formation">
-                <div class="fiche-haut">
-                    <div class="icone-fiche bleu"><img src="../../Assets/Icons/commerciel.svg" alt=""></div>
-                    <span class="nom-serie">SÉRIE G3</span>
-                </div>
-                <h3 class="titre-formation">Gestion</h3>
-                <p class="description-formation">
-                    Formation orientée vers la gestion des entreprises, l’organisation et le management.
-                </p>
-                <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
-            </article>
+        <nav>
+            <ul class="nav">
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="../Pages/etabissement.html">Etablissement</a></li>
+                <li><a href="../Pages/filiere.html">Nos Filières</a></li>
+                <li><a href="../Pages/admiddion.html">Admissions</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="../Pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="head-btn">
+            <button class="btn-nav">S'inscrire</button>
         </div>
-    </section>
+    </header>
 
-    <section class="appel-action-filiere">
-        <div class="contenu-cta">
-            <div class="textes-cta">
-                <h2 class="titre-cta">Choisissez la filière qui correspond à votre avenir</h2>
-                <p class="description-cta">Chaque filière du CETMB est pensée pour offrir des opportunités concrètes et durables aux élèves.</p>
-                <button class="bouton-cta-blanc">Commencer ici <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></button>
+    <main class="page-nos-filieres">
+        <section class="entete-filieres">
+            <span class="etiquette">FORMATION TECHNIQUE</span>
+            <h1>Nos filières de formation</h1>
+            <p class="sous-titre">Excellence académique et technique à Kara.</p>
+            <p class="paragraphe-intro">
+                Le CETMB propose des parcours rigoureux conçus pour former l’élite technique de demain.
+                Nos programmes allient théorie avancée et pratique intensive pour garantir une insertion professionnelle
+                immédiate.
+            </p>
+        </section>
+
+        <section class="groupe-filieres">
+            <h2 class="titre-categorie">Filières Industrielles</h2>
+            <p class="sous-titre-categorie">Les filières industrielles du CETMB forment des techniciens qualifiés
+                capables d’intervenir dans les domaines de la mécanique, de l’électricité, de l’électronique et des
+                systèmes techniques modernes.</p>
+
+            <div class="grille-fiches">
+                <article class="fiche-formation">
+                    <div class="fiche-haut">
+                        <div class="icone-fiche bleu"><img src="../../Assets/Icons/Mec-cog.svg" alt=""></div>
+                        <span class="nom-serie">SÉRIE F1</span>
+                    </div>
+                    <h3 class="titre-formation">Construction Mécanique</h3>
+                    <p class="description-formation">
+                        Maîtrisez la conception et la fabrication de systèmes mécaniques complexes. De la DAO à
+                        l’usinage.
+                    </p>
+                    <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme
+                        <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
+                </article>
+
+                <article class="fiche-formation">
+                    <div class="fiche-haut">
+                        <div class="icone-fiche bleu"><img src="../../Assets/Icons/elec-cpu.svg" alt=""></div>
+                        <span class="nom-serie">SÉRIE F2</span>
+                    </div>
+                    <h3 class="titre-formation">Électronique</h3>
+                    <p class="description-formation">
+                        Plongez au cœur des circuits et des systèmes embarqués pour concevoir les technologies modernes.
+                    </p>
+                    <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme
+                        <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
+                </article>
+
+                <article class="fiche-formation">
+                    <div class="fiche-haut">
+                        <div class="icone-fiche bleu"><img src="../../Assets/Icons/electro-zap.svg" alt=""></div>
+                        <span class="nom-serie">SÉRIE F3</span>
+                    </div>
+                    <h3 class="titre-formation">Électrotechnique</h3>
+                    <p class="description-formation">
+                        Apprenez à gérer la production et la distribution de l'énergie électrique pour les industries.
+                    </p>
+                    <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme
+                        <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
+                </article>
             </div>
-            <div class="contenu-vide"></div>
+        </section>
+        <section class="groupe-filieres">
+            <h2 class="titre-categorie">Filières tertiaires</h2>
+            <p class="sous-titre-categorie">Les filières tertiaires du CETMB forment des élèves capables d’évoluer dans
+                les domaines de la gestion, de l’administration et de la comptabilité, avec une forte orientation
+                professionnelle.</p>
+
+            <div class="grille-fiches">
+                <article class="fiche-formation">
+                    <div class="fiche-haut">
+                        <div class="icone-fiche bleu"><img src="../../Assets/Icons/sec-headset.svg" alt=""></div>
+                        <span class="nom-serie">SÉRIE G1</span>
+                    </div>
+                    <h3 class="titre-formation">Secrétariat</h3>
+                    <p class="description-formation">
+                        Formation axée sur la bureautique, l’organisation administrative et la communication
+                        professionnelle.
+                    </p>
+                    <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme
+                        <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
+                </article>
+
+                <article class="fiche-formation">
+                    <div class="fiche-haut">
+                        <div class="icone-fiche bleu"><img src="../../Assets/Icons/calculator.svg" alt=""></div>
+                        <span class="nom-serie">SÉRIE G2</span>
+                    </div>
+                    <h3 class="titre-formation">Comptabilité</h3>
+                    <p class="description-formation">
+                        Apprentissage des bases de la comptabilité, de la gestion financière et de l’analyse comptable.
+                    </p>
+                    <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme
+                        <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
+                </article>
+
+                <article class="fiche-formation">
+                    <div class="fiche-haut">
+                        <div class="icone-fiche bleu"><img src="../../Assets/Icons/commerciel.svg" alt=""></div>
+                        <span class="nom-serie">SÉRIE G3</span>
+                    </div>
+                    <h3 class="titre-formation">Gestion</h3>
+                    <p class="description-formation">
+                        Formation orientée vers la gestion des entreprises, l’organisation et le management.
+                    </p>
+                    <a href="../../Frontend/Pages/filiere-detail.html" class="lien-formation">Découvrir le programme
+                        <img src="../../Assets/Icons/arrow-right.svg" alt="Flèche"></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="appel-action-filiere">
+            <div class="contenu-cta">
+                <div class="textes-cta">
+                    <h2 class="titre-cta">Choisissez la filière qui correspond à votre avenir</h2>
+                    <p class="description-cta">Chaque filière du CETMB est pensée pour offrir des opportunités concrètes
+                        et durables aux élèves.</p>
+                    <button class="bouton-cta-blanc">Commencer ici <img src="../../Assets/Icons/arrow-right.svg"
+                            alt="Flèche"></button>
+                </div>
+                <div class="contenu-vide"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pied-page">
+        <div class="conteneur-pied">
+
+            <div class="colonne-logo">
+                <div class="logo-fictif">
+                    <span class="nom-ecole">CETMB</span>
+                </div>
+                <p class="slogan-pied">
+                    Nous bâtissons l'excellence technique pour les leaders de demain.
+                </p>
+                <p class="annee-pied">Lycée Technique, 2024.</p>
+            </div>
+
+            <div class="colonne-liens">
+                <h4>Académique</h4>
+                <ul>
+                    <li><a href="../Pages/filiere.html">Filières Industrielles</a></li>
+                    <li><a href="../Pages/filiere.html">Filières Tertiaires</a></li>
+                    <li><a href="#">Calendrier Scolaire</a></li>
+                </ul>
+            </div>
+
+            <div class="colonne-liens">
+                <h4>Institution</h4>
+                <ul>
+                    <li><a href="../Pages/etabissement.html">À propos de nous</a></li>
+                    <li><a href="#">Administration</a></li>
+                    <li><a href="#">Actualités</a></li>
+                </ul>
+            </div>
+
+            <div class="colonne-liens">
+                <h4>Ressources</h4>
+                <ul>
+                    <li><a href="#">Espace Élèves</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="../Pages/admiddion.html">Inscriptions</a></li>
+                </ul>
+            </div>
+
+            <div class="colonne-actions">
+                <h4>Nous suivre</h4>
+                <div class="groupe-boutons">
+                    <a href="#" class="bouton-pilule">
+                        <i class="bi bi-facebook"></i>
+                        Facebook
+                    </a>
+                    <a href="#" class="bouton-pilule">
+                        <i class="bi bi-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
         </div>
-    </section>
-</main>
-    
-    <script>
-        // Charger le header commun
-        fetch('../Components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            })
-            .catch(error => console.error('Erreur lors du chargement du header:', error));
-    </script>
-<div id="footer-placeholder"></div>
-    <script>
-        fetch('../Components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Erreur lors du chargement du footer:', error));
-    </script>
+
+        <div class="barre-legale">
+            <div class="contenu-barre">
+                <p>© 2024 CETMB Inc. Tous droits réservés.</p>
+                <div class="liens-legaux">
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

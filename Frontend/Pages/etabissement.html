@@ -11,7 +11,24 @@
 </head>
 
 <body>
-    <div id="header-container"></div>
+    <header>
+        <div class="logo">
+            <img src="../../Assets/Brand/LOGO3.webp" alt="CETMB Logo" width="80px">
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="../Pages/etabissement.html">Etablissement</a></li>
+                <li><a href="../Pages/filiere.html">Nos Filières</a></li>
+                <li><a href="../Pages/admiddion.html">Admissions</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="../Pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="head-btn">
+            <button class="btn-nav">S'inscrire</button>
+        </div>
+    </header>
     <section class="manioc1">
         <div class="anana">
             <h1 class="sima">Un lycée technique <br>d'escellence au service <br> de la réussite</h1>
@@ -180,7 +197,8 @@
                     <p>FOCUS EXCELLENCE</p>
                 </div>
                 <h2>Un palmarès <br>Exceptionnel:BAC 2024</h2>
-                <p class="LEPIO">L'année 2024 a marqué une nouvelle page de gloire pour le CETMB.Nous sommes fiers d'annoncer un
+                <p class="LEPIO">L'année 2024 a marqué une nouvelle page de gloire pour le CETMB.Nous sommes fiers
+                    d'annoncer un
                     taux de réussite de <span class="hutugfry">100% dans la série F4 (Génie Civil)</span>.Ce résultat
                     témoigne de la qualité de
                     notre <br>encadrement et de la détermination de nos élèves.</p>
@@ -214,7 +232,8 @@
                     </div>
                 </div>
                 <div class="GIOA">
-                    <div class="ttreim"><img src="../../Assets/Icons/book-open-check.svg" alt="Pédagogie éprouvée"></div>
+                    <div class="ttreim"><img src="../../Assets/Icons/book-open-check.svg" alt="Pédagogie éprouvée">
+                    </div>
                     <div class="LEPIO">
                         <h3>Pédagogie Ëprouvée</h3>
                         <p>Un corps professoral expérimenté et dévoué à la réussite. </p>
@@ -224,7 +243,7 @@
                     <div class="ttreim"><img src="../../Assets/Icons/sec-headset.svg" alt="Cadre sécurisé"></div>
                     <div class="LEPIO">
                         <h3>Cadre Sécurisé</h3>
-                        <p>Un environnement sain et discipliné pour  étudier en toute sérénité.</p>
+                        <p>Un environnement sain et discipliné pour étudier en toute sérénité.</p>
                     </div>
                 </div>
             </div>
@@ -244,7 +263,8 @@
                     </div>
                 </div>
                 <div class="GIOA">
-                    <div class="ttreim"><img src="../../Assets/Icons/briefcase.svg" alt="Insertion professionnelle"></div>
+                    <div class="ttreim"><img src="../../Assets/Icons/briefcase.svg" alt="Insertion professionnelle">
+                    </div>
                     <div class="LEPIO">
                         <h3>Insertion Pro</h3>
                         <p> Partenariats avec des entreprises locames pour les stages.</p>
@@ -314,25 +334,74 @@
                 </div>
             </div>
         </section> -->
-    
-    <script>
-        // Charger le header commun
-        fetch('../Components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            })
-            .catch(error => console.error('Erreur lors du chargement du header:', error));
-    </script>
-<div id="footer-placeholder"></div>
-    <script>
-        fetch('../Components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Erreur lors du chargement du footer:', error));
-    </script>
+
+        <footer class="pied-page">
+            <div class="conteneur-pied">
+
+                <div class="colonne-logo">
+                    <div class="logo-fictif">
+                        <span class="nom-ecole">CETMB</span>
+                    </div>
+                    <p class="slogan-pied">
+                        Nous bâtissons l'excellence technique pour les leaders de demain.
+                    </p>
+                    <p class="annee-pied">Lycée Technique, 2024.</p>
+                </div>
+
+                <div class="colonne-liens">
+                    <h4>Académique</h4>
+                    <ul>
+                        <li><a href="../Pages/filiere.html">Filières Industrielles</a></li>
+                        <li><a href="../Pages/filiere.html">Filières Tertiaires</a></li>
+                        <li><a href="#">Calendrier Scolaire</a></li>
+                    </ul>
+                </div>
+
+                <div class="colonne-liens">
+                    <h4>Institution</h4>
+                    <ul>
+                        <li><a href="../Pages/etabissement.html">À propos de nous</a></li>
+                        <li><a href="#">Administration</a></li>
+                        <li><a href="#">Actualités</a></li>
+                    </ul>
+                </div>
+
+                <div class="colonne-liens">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#">Espace Élèves</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="../Pages/admiddion.html">Inscriptions</a></li>
+                    </ul>
+                </div>
+
+                <div class="colonne-actions">
+                    <h4>Nous suivre</h4>
+                    <div class="groupe-boutons">
+                        <a href="#" class="bouton-pilule">
+                            <i class="bi bi-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="bouton-pilule">
+                            <i class="bi bi-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="barre-legale">
+                <div class="contenu-barre">
+                    <p>© 2024 CETMB Inc. Tous droits réservés.</p>
+                    <div class="liens-legaux">
+                        <a href="#">Conditions d'utilisation</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>

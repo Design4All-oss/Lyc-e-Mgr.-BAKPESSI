@@ -1,0 +1,145 @@
+/* ========== FOOTER STYLES ========== */
+.pied-page {
+    background-color: var(--bleu-doux);
+    padding-top: 80px;
+}
+
+.conteneur-pied {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 5% 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* --- LOGO ET SLOGAN --- */
+.colonne-logo {
+    max-width: 300px;
+}
+
+.logo-fictif {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.nom-ecole {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--couleur-noir);
+}
+
+.slogan-pied {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--couleur-noir);
+    margin-bottom: 20px;
+}
+
+.annee-pied {
+    color: var(--texte-secondaire);
+    font-size: 0.9rem;
+}
+
+/* --- COLONNES DE LIENS --- */
+.colonne-liens h4 {
+    font-size: 1rem;
+    color: var(--couleur-noir);
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.colonne-liens ul {
+    list-style: none;
+    padding: 0;
+}
+
+.colonne-liens ul li {
+    margin-bottom: 15px;
+}
+
+.colonne-liens ul li a {
+    text-decoration: none;
+    color: var(--texte-secondaire);
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.colonne-liens ul li a:hover {
+    color: var(--couleur-principale);
+}
+
+/* --- BOUTONS STYLE PILULE --- */
+.colonne-actions h4 {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: var(--couleur-noir);
+    font-weight: 600;
+}
+
+.groupe-boutons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bouton-pilule {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 25px;
+    border: 1px solid var(--bordure-claire);
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--couleur-noir);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.bouton-pilule:hover {
+    background-color: #f8f8f8;
+    border-color: var(--couleur-noir);
+}
+
+.bouton-pilule img,
+.bouton-pilule i {
+    width: 20px;
+    font-size: 20px;
+}
+
+/* --- BARRE LÉGALE --- */
+.barre-legale {
+    background-color: var(--couleur-secondaire);
+    padding: 25px 5%;
+}
+
+.contenu-barre {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--couleur-blanc);
+}
+
+.liens-legaux {
+    display: flex;
+    gap: 30px;
+}
+
+.liens-legaux a {
+    text-decoration: none;
+    color: var(--couleur-blanc);
+    transition: opacity 0.3s;
+}
+
+.liens-legaux a:hover {
+    opacity: 0.7;
+}
